@@ -15,7 +15,7 @@
   width: 40%;
   border-radius: 20px;
   padding: 10px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   border: transparent;
 }
 
@@ -24,7 +24,7 @@
   border-radius: 20px;
   background-color: #607b97;
   color: #eef2f4;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   cursor: pointer;
   border: transparent;
   width: 80px;
@@ -65,20 +65,22 @@
 }
 
 .search-results-city {
-  font-weight: bold;
-  font-size: 20px;
+  font-weight: 600;
+  font-size: 40px;
+  margin: 5px 5px 5px 5px;
+  padding-top: 20px;
 }
 
 .search-results-temperature {
-  font-size: 40px;
-  font-weight: bold;
+  font-size: 45px;
+  font-weight: 500;
   position: relative;
   top: 20px;
 }
 .search-results-units {
   font-size: 24px;
   position: relative;
-  bottom: 14px;
+  top: 10px;
   font-weight: 500;
   padding-left: 5px;
 }
@@ -89,15 +91,11 @@
   top: 20px;
 }
 
-h1 {
-  margin: 5px 5px 5px 5px;
-  padding-top: 20px;
-}
 body {
   background: radial-gradient(
     circle at 50.3% 44.5%,
     rgb(116, 147, 179) 0%,
     rgb(62, 83, 104) 100.2%
   );
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }

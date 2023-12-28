@@ -8,31 +8,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="container">
       <header>
-        <form class="enter-a-city-form">
+        <form class="enter-a-city-form" id="enter-a-city-form">
           <input
             type="text"
             autofocus
             autocomplete="off"
             placeholder="Enter a city..."
             class="enter-a-city-input"
+            id="enter-a-city-input"
           />
           <input type="submit" value="Search" class="enter-a-city-search" />
         </form>
       </header>
       <main>
         <div class="search-results">
-          <div class="search-results-city"><h1>City Name</h1></div>
+          <div class="search-results-city" id="search-results-city"></div>
           <div>
-            <span class="search-results-temperature"
-              >X<span class="search-results-units">°C</span></span
-            >
+            <span
+              class="search-results-temperature"
+              id="search-results-temperature"
+            ></span
+            ><span class="search-results-units">°C</span>
             <span class="search-results-icon">🌞</span>
           </div>
         </div>
@@ -40,14 +44,16 @@
       <section class="current-details-flex">
         <div>
           <span>Day Time,</span>
-          <span>Description</span>
-          <div>Longitude, Latitude</div>
-          <div>Country</div>
+          <span id="description"></span>
+          <div>
+            Long.<span id="longitude"> </span>, Lat.<span id="latitude"></span>
+          </div>
+          <div id="country"></div>
         </div>
         <div>
-          <span>Feels Like</span>
-          <div>Humidity</div>
-          <div>Windspeed</div>
+          <span>Feels Like: </span><span id="feels-like"></span><span>°C</span>
+          <div>Humidity: <span id="humidity"></span></div>
+          <div>Windspeed: <span id="windspeed"></span></div>
         </div>
       </section>
       <footer class="footer-links">
