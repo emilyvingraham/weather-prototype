@@ -102,3 +102,7 @@ body {
   );
   font-family: 'Roboto', sans-serif;
 }
+
+strong {
+  color: #607b97;
+}
