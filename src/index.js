@@ -13,6 +13,12 @@ function updateData(response) {
   let windspeedElement = document.querySelector('#windspeed');
   let dateTimeElement = document.querySelector('#date-and-time');
   let date = new Date(response.data.time * 1000);
+  let icon = document.querySelector('#icon');
+  icon.innerHTML = `<img
+      src="${response.data.condition.icon_url}"
+      class="search-results-icon"
+    />
+  `;
 
   temperatureElement.innerHTML = `${temperature}`;
   cityElement.innerHTML = response.data.city;
